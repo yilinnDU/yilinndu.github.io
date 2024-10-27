@@ -28,7 +28,7 @@ My email address is yilin.du@helsinki.fi
 
 ## Projects
 
-[cmdline-course](https://github.com/yilinnDU/cmdline-course): this project focuses on processing texts from Project Gutenberg, specifically the book "Alice's Adventures in Wonderland". The project uses a `Makefile` to automate the build process for generating word frequency lists, sentence files, and parsed outputs. The project generates comprehensive output files, such as `all.freq.txt` and `all.sent.txt`, facilitating further analysis of the literary works.
+[cmdline-course](https://github.com/yilinnDU/cmdline-course): this project focuses on processing texts from Project Gutenberg, specifically the book "Alice's Adventures in Wonderland". The project uses a **Makefile** to automate the build process for generating word frequency lists, sentence files, and parsed outputs. The project generates comprehensive output files, such as **all.freq.txt** and **all.sent.txt**, facilitating further analysis of the literary works.
 
 ## Misc. 
 
