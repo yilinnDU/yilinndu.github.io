@@ -4,7 +4,7 @@ layout: default
 
 ## Introduction
 
-<img src="assets/images/me.jpg" alt="Photo" hspace="20" width="30%" align="right"/> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<img src="assets/images/me.jpg" alt="Photo" hspace="20" width="30%" align="right"/> Hi:)<br>My name is Yilin Du, and I am a first-year master's student in Digital Humanities at University of Helsinki. My previous major was history, with a particular focus on the north-south division in medieval China. Currently, I am exploring digital tools in historical studies to discover the new perspectives they can offer. I am especially passionate about sentiment analysis and network analysis. Additionally, I have a keen interest in archive digitization, aiming to build user-friendly historical databases.
 
 ## Find me on
 
