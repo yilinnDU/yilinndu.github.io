@@ -17,14 +17,21 @@ terminal
 - key points1
 - key points2
 
-| week    | content        | key points           |
+| Week    | Summary        | Content         |
 | ------- | --------------------- | ------------------- |
-| week 1  | Introduction to Command Line Environments| 学了啥忘了 |
-| week 2  | Navigating a UNIX System        | 学习 Git 基本用法   |
+| Week 1 | Introduction to Command Line Environments | 学了啥忘了 |
+| Week 2 | Navigating a UNIX System |  |
+| Week 3 | Basic Corpus Processing |  |
+| Week 4 | Advanced Corpus Processing | |
+| Week 5 | Scripting and Configuration Files | |
+| Week 6 | Installing and Running Programs | |
+| Week 7 | Version Control | |
 
-插入图片：![description](assets/images/me.jpg)
 
-# Summary
+插入图片：![这是一只老鼠](assets/images/me.jpg)
+
+# Introduction
+
 
 ## Week 1
 
