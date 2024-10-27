@@ -17,12 +17,12 @@ terminal
 - key points1
 - key points2
 
-<img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="right"/>
+<img src="assets/images/rei_picture.jpg" alt="Photo">
 
 # Introduction
 This is a summary for **command-line tools for linguists, fall 2024.**
 
-| Week    | Overview        | Content         |
+| Week    | Overview        | Key Points         |
 | ------- | --------------------- | ------------------- |
 | Week 1 | Introduction to Command Line Environments | 学了啥忘了 |
 | Week 2 | Navigating a UNIX System |  |
