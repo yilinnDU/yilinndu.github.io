@@ -17,7 +17,7 @@ terminal
 - key points1
 - key points2
 
-!(assets/images/me.jpg)
+<img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="right"/>
 
 # Introduction
 This is a summary for **command-line tools for linguists, fall 2024.**
