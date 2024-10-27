@@ -24,8 +24,10 @@ Makefile
 ```bash
 terminal
 ```
-- key points 2
+- key points 2<br>
 `code`
+
+- Reflection: 1-3 weeks
 
 ## Week 2
 
