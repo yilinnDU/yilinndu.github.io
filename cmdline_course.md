@@ -27,7 +27,7 @@ terminal
 - key points 2<br>
 `code`
 
-- Reflection: 1-3 weeks
+- Reflection: 1-3 sentences
 
 ## Week 2
 
