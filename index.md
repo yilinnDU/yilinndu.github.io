@@ -32,4 +32,4 @@ My email address is yilin.du@helsinki.fi
 
 ## Misc. 
 
-[Instagram](https://www.instagram.com/ylinndu/) 
+My [Instagram](https://www.instagram.com/ylinndu/) 
