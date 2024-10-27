@@ -2,25 +2,6 @@
 layout: default
 ---
 
-# format
-`code`
-
-```makefile
-Makefile
-```
-
-```bash
-terminal
-```
-
-- first class
-- key points1
-- key points2
-
-<img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="left"/>
-
-
-
 # Introduction
 This is a summary for **command-line tools for linguists, fall 2024.**
 
@@ -35,6 +16,16 @@ This is a summary for **command-line tools for linguists, fall 2024.**
 | Week 7 | Version Control | |
 
 ## Week 1
+- key points 1
+```makefile
+Makefile
+```
+
+```bash
+terminal
+```
+- key points 2
+`code`
 
 ## Week 2
 
@@ -47,3 +38,5 @@ This is a summary for **command-line tools for linguists, fall 2024.**
 ## Week 6
 
 ## Week 7
+
+<img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="left"/>
