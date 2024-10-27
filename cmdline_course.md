@@ -19,12 +19,14 @@ terminal
 
 <img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="left"/>
 
+
+
 # Introduction
 This is a summary for **command-line tools for linguists, fall 2024.**
 
 | Week    | Overview        | Key Points         |
 | ------- | --------------------- | ------------------- |
-| Week 1 | Introduction to Command Line Environments | 学了啥忘了 |
+| Week 1 | Introduction to Command Line Environments |  |
 | Week 2 | Navigating a UNIX System |  |
 | Week 3 | Basic Corpus Processing |  |
 | Week 4 | Advanced Corpus Processing | |
