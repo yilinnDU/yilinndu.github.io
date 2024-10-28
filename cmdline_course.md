@@ -16,8 +16,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 | Week 7 | Version Control | |
 
 ## Week 1
-- Setting up and launching command-line on Windows
-  download [Ubuntu](https://ubuntu.com/download)
+- Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
 - Command line basics
   | Command | Role |
   | ------ | --------------------- |
@@ -41,7 +40,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - Quit text editors like `nano` using `Ctrl+X`
   - Quit almost everything using `Ctrl-C`
 
-- Reflection: 1-3 sentences
+Reflection: 1-3 sentences
 
 ## Week 2
 
