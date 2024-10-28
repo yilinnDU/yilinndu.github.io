@@ -15,7 +15,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 | Week 6 | Installing and Running Programs | |
 | Week 7 | Version Control | |
 
-## Week 1
+## Week 1 Introduction to Command Line Environments
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
 - Command line basics
   | Command | Role |
@@ -42,14 +42,18 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 Reflection: 1-3 sentences
 
-## Week 2
+## Week 2 Navigating a UNIX System
 - Handling directories
   - `mkdir` creat a new directory
   - `rmdir` delete empty directory
   - `rm -R` remove directories with content
   - `cp -R` copy directories
   - `mv` move / rename directories
-  - `tar` and `gzip` compress directories and files<br>`tar -czf archive.tar.gz /path/to/directory`, `-c`create a new archive, `-z`compress the archive using `gzip.`, `-f`specify the name of the archive file
+  - `tar` and `gzip` compress directories and files
+  ```bash
+  tar -czf archive.tar.gz /path/to/directory
+  ```
+  `-c`create a new archive, `-z`compress the archive using `gzip.`, `-f`specify the name of the archive file
 - File system
   - `/home` user home directories
   - `/bin` for essential commands like `ls`
@@ -75,7 +79,8 @@ Reflection: 1-3 sentences
     - from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`
     - example: `scp KIK-LG219/week1/life_of_bee.txt puhti:~` `scp puhti:~/life_of_bee.txt .`
 
-## Week 3
+## Week 3 Basic Corpus Processing
+
 
 ## Week 4
 
