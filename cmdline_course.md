@@ -40,7 +40,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - Quit text editors (like `nano`) using `Ctrl+X`
   - Quit almost everything using `Ctrl+C`
 
-**Reflection**: 1-3 sentences
+*Reflection*: 1-3 sentences
 
 ## Week 2 Navigating a UNIX System
 - **Handling directories**
@@ -81,7 +81,10 @@ This course offers a comprehensive exploration of the command-line environment, 
     from local to remote: `scp <local_path> <username>@<remote_server>:<remote_path>`<br>
     from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`
 
+*Reflection*: 
+
 ## Week 3 Basic Corpus Processing
+
 
 
 ## Week 4
