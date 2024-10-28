@@ -110,7 +110,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `egrep "[a-zA-ZåäöÅÄÖ]*ss[aä]$"`, `$` end of the line
   - `egrep "^[a-zA-ZåäöÅÄÖ]{4}ss[aä]$" `, `{}`the preceding character class must occur exactly certain times
   - `egrep --color "\b[a-zåäö]*ss[aä] [a-zåäö]*ss[aä]\b" file.txt > new_file.txt`, highlight and store matching lines in a new file
-- **Basic analysis of CSV files**
+- **Basic analysis of CSV files**<br>
   `egrep -w -f`: `-w` only match whole words, `-f` read a file<br>`egrep -w -f search.csv basic.csv` read the patterns from `search.csv`, and searches through the 'basic.csv' file for lines that match those patterns
   ```bash
   $ wc -l Languages.csv
