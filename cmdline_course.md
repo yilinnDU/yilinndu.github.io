@@ -97,13 +97,13 @@ This course offers a comprehensive exploration of the command-line environment, 
     - `uniq -d`: display only th duplicate lines
   - `wc`: word count
     - `wc -l`: count the number of lines
-- **`egrep` and regular expression**
+- **`egrep` and regular expression**<br>
   `egrep` is used for searching text using regular expressions
-  - `egrep " had [a-z]*ed "` `*`means the character can occur zero or more times
-  - `egrep "\bhad [a-z]*ed\b"` `\b` is used to specify word boundaries
-  - `egrep "^[Aa][a-zåäö]*"` `^`beginning of the line
-  - `egrep "[a-zA-ZåäöÅÄÖ]*ss[aä]$"` `$` end of the line
-  - `egrep "^[a-zA-ZåäöÅÄÖ]{4}ss[aä]$" ` `{}`the preceding character class must occur exactly certain times
+  - `egrep " had [a-z]*ed "`  `*`means the character can occur zero or more times
+  - `egrep "\bhad [a-z]*ed\b"`  `\b` is used to specify word boundaries
+  - `egrep "^[Aa][a-zåäö]*"`  `^`beginning of the line
+  - `egrep "[a-zA-ZåäöÅÄÖ]*ss[aä]$"`  `$` end of the line
+  - `egrep "^[a-zA-ZåäöÅÄÖ]{4}ss[aä]$" `  `{}`the preceding character class must occur exactly certain times
   - `egrep --color "\b[a-zåäö]*ss[aä] [a-zåäö]*ss[aä]\b" file.txt > new_file.txt` highlight and store matching lines in a new file
 
 ## Week 4
