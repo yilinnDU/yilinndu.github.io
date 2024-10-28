@@ -47,7 +47,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 2 Navigating a UNIX System
 
-<img src="assets/images/week2.png" alt="week2" hspace="10" width="70%">
+<img src="assets/images/week2.png" alt="week2" hspace="10" width="50%">
 
 - **Handling directories**
   - `mkdir` creat a new directory
@@ -91,7 +91,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 3 Basic Corpus Processing
 
-<img src="assets/images/week3.png" alt="week3" hspace="10" width="70%">
+<img src="assets/images/week3.png" alt="week3" hspace="10" width="50%">
 
 - **Basic text processing**
   - `tr`: `tr "a" "A"` translate characters in a text stream
@@ -139,7 +139,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 4 Advanced Corpus Processing
 
-<img src="assets/images/week4.png" alt="week4" hspace="10" width="70%">
+<img src="assets/images/week4.png" alt="week4" hspace="10" width="50%">
 
 
 
