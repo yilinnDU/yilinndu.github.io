@@ -141,7 +141,8 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 <img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
 
-
+- **`sed` command**
+  - 
 
 
 ## Week 5
