@@ -46,6 +46,9 @@ This course offers a comprehensive exploration of the command-line environment, 
 *Reflection*: 1-3 sentences
 
 ## Week 2 Navigating a UNIX System
+
+<img src="assets/images/week2.png" alt="week2">
+
 - **Handling directories**
   - `mkdir` creat a new directory
   - `rmdir` delete empty directory
@@ -87,6 +90,9 @@ This course offers a comprehensive exploration of the command-line environment, 
 *Reflection*: 
 
 ## Week 3 Basic Corpus Processing
+
+<img src="assets/images/week3.png" alt="week3">
+
 - **Basic text processing**
   - `tr`: `tr "a" "A"` translate characters in a text stream
     - `tr -d`: delete specified characters
@@ -132,6 +138,10 @@ This course offers a comprehensive exploration of the command-line environment, 
   `egrep -w -f`: `-w` only match whole words, `-f` read a file<br>`egrep -w -f search.csv basic.csv` read the patterns from `search.csv`, and searches through the 'basic.csv' file for lines that match those patterns
 
 ## Week 4 Advanced Corpus Processing
+
+<img src="assets/images/week4.png" alt="week4">
+
+
 
 
 ## Week 5
