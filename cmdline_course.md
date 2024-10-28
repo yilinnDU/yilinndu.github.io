@@ -95,8 +95,13 @@ This course offers a comprehensive exploration of the command-line environment, 
     - `uniq -i`: ignore case
     - `uniq -c`: count the number of occurrences of each line
     - `uniq -d`: display only th duplicate lines
+    - `uniq -u`: delete all repeated lines, extrace lines that are completely unique
   - `wc`: word count
     - `wc -l`: count the number of lines
+  - `cut`: extract specific sections
+    - `cut -d',' -f1 file.csv > new_file.csv`: `-d','`specifies the delimiter that separates the fields in the input, `-f1`specifies which field to extract, '1' indicates the first field (or column) from each line
+  - `tail`: output the last part of files, also be used to skip the first few lines of a file
+    - `tail -n +2 file.csv > tail_file.csv`: `-n +2`start printing from line 2
 - **`egrep` and regular expression**<br>
   `egrep` is used for searching text using regular expressions
   - `egrep " had [a-z]*ed "`, `*`means the character can occur zero or more times
@@ -105,6 +110,23 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `egrep "[a-zA-ZåäöÅÄÖ]*ss[aä]$"`, `$` end of the line
   - `egrep "^[a-zA-ZåäöÅÄÖ]{4}ss[aä]$" `, `{}`the preceding character class must occur exactly certain times
   - `egrep --color "\b[a-zåäö]*ss[aä] [a-zåäö]*ss[aä]\b" file.txt > new_file.txt`, highlight and store matching lines in a new file
+- **Basic analysis of CSV files**
+  `egrep -w -f`: `-w` only match whole words, `-f` read a file<br>`egrep -w -f search.csv basic.csv` read the patterns from `search.csv`, and searches through the 'basic.csv' file for lines that match those patterns
+  ```bash
+  $ wc -l Languages.csv
+  $ wc -l LanguagesDirectionality.csv
+  $ cut -d',' -f1,1 Languages.csv > Languages_cut.csv
+  $ cut -d',' -f1,1 LanguagesDirectionality.csv > LanguagesDirectionality_cut.csv
+  $ cat Languages_cut.csv LanguagesDirectionality_cut.csv > Languages_all.csv
+  $ tail -n +2 LanguagesDirectionality_cut.csv
+  $ tail -n +2 LanguagesDirectionality_cut.csv > LanguagesDirectionality_tail.csv
+  $ cat Languages_cut.csv LanguagesDirectionality_tail.csv > Languages_all.csv
+  $ sort Languages_all.csv > Languages_sorted.csv
+  $ uniq -u Languages_sorted.csv
+  $ uniq -d Languages_sorted.csv
+  $ uniq -u Languages_sorted.csv > Languages_uniq.csv
+  $ egrep -w -f Languages_uniq.csv LanguagesDirectionality.csv
+  ```
 
 ## Week 4
 
