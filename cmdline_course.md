@@ -84,8 +84,19 @@ This course offers a comprehensive exploration of the command-line environment, 
 *Reflection*: 
 
 ## Week 3 Basic Corpus Processing
-
-
+- **Basic text processing**
+  - `tr`: `tr "a" "A"` translate (or delete) characters in a text stream
+    - `tr -d`: delete specified characters<br>`tr -d 'a'`
+    - `tr -s`: squeeze multiple consecutive characters into one<br>`cat filename.txt | tr -s "[:space:][:punct:]" "\n" > new_filename.txt'` tokenize the text into one word per line
+  - `sort`: `sort new_filename.txt > sort_filename.txt` sort lines in alphabetical order
+    - `sort -f`: ignore case
+    - `sort -r`: in reverse order
+  - `uniq`: remove duplicate lines
+    - `uniq -i`: ignore case
+    - `uniq -c`: count the number of occurrences of each line
+    - `uniq -d`: display only th duplicate lines
+- **Simple regular expression**
+  - 
 
 ## Week 4
 
