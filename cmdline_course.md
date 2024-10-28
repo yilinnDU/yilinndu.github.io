@@ -55,32 +55,32 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `/bin` for essential commands like `ls`
   - `/tmp` for temporary files
   - `which` or `where` return the path of executable files
-- **Process management*
-  - monitoring processes:
+- **Process management**
+  - monitoring processes:<br>
     `top`: displays real-time information about running processes, including their CPU and memory usage.
-  - foreground & background processes:
-    `&`: at the end of a command, runs that command as a background process
-    `fg`: brings a background process to the foreground
-    `CTRL+Z`: suspends a foreground process and sends it to the background. paused but not terminated
-  - kill processes:
-    `ps`: displays information about currently running processes, including their Process IDs (PIDs)
+  - foreground & background processes:<br>
+    `&`: at the end of a command, runs that command as a background process<br>
+    `fg`: brings a background process to the foreground<br>
+    `CTRL+Z`: suspends a foreground process and sends it to the background. paused but not terminated<br>
+  - kill processes:<br>
+    `ps`: displays information about currently running processes, including their Process IDs (PIDs)<br>
     `kill`: terminates a process by sending a signal, typically using the process’s PID
 - **Remote server**
-  - conneting to remote servers with `ssh` (secure shell)
-    - `ssh puhti.csc.fi`
-    - `CTRL+D` or `quit` to quit
-    - `ssh <username>@<servername>`
-  - copying to/from remote servers with `scp` (secure copy protocol)
-    - `scp <user_1>@<server_1>:<path_1> <user_2>@<server_2>:<path_2>`<br>`scp -r` for directories
-    - from local to remote: `scp <local_path> <username>@<remote_server>:<remote_path>`
-    - from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`
-    - example:
-      ```bash
-      $ ssh puhti.csc.fi
-      $ CTRL+D
-      $ scp KIK-LG219/week1/life_of_bee.txt puhti:~
-      $ scp puhti:~/life_of_bee.txt .
-      ```
+  - conneting to remote servers with `ssh` (secure shell)<br>
+    `ssh puhti.csc.fi`<br>
+    `CTRL+D` or `quit` to quit<br>
+    `ssh <username>@<servername>`
+  - copying to/from remote servers with `scp` (secure copy protocol)<br>
+    `scp <user_1>@<server_1>:<path_1> <user_2>@<server_2>:<path_2>`<br>`scp -r` for directories<br>
+    from local to remote: `scp <local_path> <username>@<remote_server>:<remote_path>`<br>
+    from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`<br>
+    example:
+    ```bash
+    $ ssh puhti.csc.fi
+    $ CTRL+D
+    $ scp KIK-LG219/week1/life_of_bee.txt puhti:~
+    $ scp puhti:~/life_of_bee.txt .
+    ```
 
 ## Week 3 Basic Corpus Processing
 
