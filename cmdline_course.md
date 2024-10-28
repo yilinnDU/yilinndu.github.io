@@ -17,7 +17,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 1 Introduction to Command Line Environments  
 
-<img src="assets/images/week1.png" alt="week1" hspace="10" width="70%">
+<img src="assets/images/week1.png" alt="week1" hspace="10" width="60%">
 
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
 - **Command line basics**
@@ -91,7 +91,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 3 Basic Corpus Processing
 
-<img src="assets/images/week3.png" alt="week3" hspace="10" width="50%">
+<img src="assets/images/week3.png" alt="week3" hspace="10" width="40%">
 
 - **Basic text processing**
   - `tr`: `tr "a" "A"` translate characters in a text stream
@@ -139,7 +139,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 4 Advanced Corpus Processing
 
-<img src="assets/images/week4.png" alt="week4" hspace="10" width="50%">
+<img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
 
 
 
