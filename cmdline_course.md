@@ -142,7 +142,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 <img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
 
 - **`sed` command**
-  - 
+- **Pipelines**
 
 
 ## Week 5
@@ -151,14 +151,3 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 7
 
-<img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="left"/>
-
-```makefile
-Makefile
-```
-
-```bash
-terminal
-```
-- key points 2<br>
-`code`
