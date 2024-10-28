@@ -47,8 +47,10 @@ Reflection: 1-3 sentences
   - `mkdir` creat a new directory
   - `rmdir` delete empty directory
   - `rm -R` remove directories with content
-  - 'cp -R' copy directories
-  - 'mv' move / rename directories
+  - `cp -R` copy directories
+  - `mv` move / rename directories
+  - `tar` and `gzip` compress directories and files
+    `tar -czf archive.tar.gz /path/to/directory`, `-c`create a new archive, `-z`compress the archive using `gzip.`, `-f`specify the name of the archive file
 - File system
   - `/home` user home directories
   - `/bin` for essential commands like `ls`
@@ -64,9 +66,15 @@ Reflection: 1-3 sentences
   - kill processes:
     - `ps`: displays information about currently running processes, including their Process IDs (PIDs)
     - `kill`: terminates a process by sending a signal, typically using the process’s PID
-- Remote server
-  - conneting to remote server: `ssh`
+- **Remote server**
+  - conneting to remote servers with `ssh` (secure shell)
+    - `ssh puhti.csc.fi`，`CTRL+D` or `quit` to quit
     - `ssh <username>@<servername>`
+  - copying to/from remote servers with `scp` (secure copy protocol)
+    - `scp <user_1>@<server_1>:<path_1> <user_2>@<server_2>:<path_2>`, `scp -r` for directories
+    - from local to remote: `scp <local_path> <username>@<remote_server>:<remote_path>`
+    - from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`
+    - example: `scp KIK-LG219/week1/life_of_bee.txt puhti:~` `scp puhti:~/life_of_bee.txt .`
 
 ## Week 3
 
