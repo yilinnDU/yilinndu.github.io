@@ -17,7 +17,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 1 Introduction to Command Line Environments
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
-- Command line basics
+- **Command line basics**
   | Command | Role |
   | ------ | --------------------- |
   | `ls` | list files in a directory |
@@ -33,41 +33,42 @@ This course offers a comprehensive exploration of the command-line environment, 
   | `cat` | display file contents |
   | `less` | view file page by page |
   | `wget` | download files from websites |
-- Quitting applications
+- **Quitting applications**
   - Quit `less` using `q`
   - Quit `vim` using `Esc`
   - Quit input (like `cat`) or log out of terminal using `Ctrl+D`
   - Quit text editors (like `nano`) using `Ctrl+X`
   - Quit almost everything using `Ctrl+C`
 
-Reflection: 1-3 sentences
+**Reflection**: 1-3 sentences
 
 ## Week 2 Navigating a UNIX System
-- Handling directories
+- **Handling directories**
   - `mkdir` creat a new directory
   - `rmdir` delete empty directory
   - `rm -R` remove directories with content
   - `cp -R` copy directories
   - `mv` move / rename directories
   - `tar` and `gzip` compress directories and files<br>`tar -czf archive.tar.gz /path/to/directory`, `-c`create a new archive, `-z`compress the archive using `gzip.`, `-f`specify the name of the archive file
-- File system
+- **File system**
   - `/home` user home directories
   - `/bin` for essential commands like `ls`
   - `/tmp` for temporary files
   - `which` or `where` return the path of executable files
-- Process management
+- **Process management*
   - monitoring processes:
-    - `top`: displays real-time information about running processes, including their CPU and memory usage.
+    `top`: displays real-time information about running processes, including their CPU and memory usage.
   - foreground & background processes:
-    - `&`: at the end of a command, runs that command as a background process
-    - `fg`: brings a background process to the foreground
-    - `CTRL+Z`: suspends a foreground process and sends it to the background. paused but not terminated
+    `&`: at the end of a command, runs that command as a background process
+    `fg`: brings a background process to the foreground
+    `CTRL+Z`: suspends a foreground process and sends it to the background. paused but not terminated
   - kill processes:
-    - `ps`: displays information about currently running processes, including their Process IDs (PIDs)
-    - `kill`: terminates a process by sending a signal, typically using the process’s PID
+    `ps`: displays information about currently running processes, including their Process IDs (PIDs)
+    `kill`: terminates a process by sending a signal, typically using the process’s PID
 - **Remote server**
   - conneting to remote servers with `ssh` (secure shell)
-    - `ssh puhti.csc.fi`，`CTRL+D` or `quit` to quit
+    - `ssh puhti.csc.fi`
+    - `CTRL+D` or `quit` to quit
     - `ssh <username>@<servername>`
   - copying to/from remote servers with `scp` (secure copy protocol)
     - `scp <user_1>@<server_1>:<path_1> <user_2>@<server_2>:<path_2>`<br>`scp -r` for directories
