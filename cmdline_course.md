@@ -86,7 +86,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 ## Week 3 Basic Corpus Processing
 - **Basic text processing**
   - `tr`: `tr "a" "A"` translate (or delete) characters in a text stream
-    - `tr -d`: delete specified characters<br>`tr -d 'a'`
+    - `tr -d`: delete specified characters
     - `tr -s`: squeeze multiple consecutive characters into one<br>`cat filename.txt | tr -s "[:space:][:punct:]" "\n" > new_filename.txt'` tokenize the text into one word per line
   - `sort`: `sort new_filename.txt > sort_filename.txt` sort lines in alphabetical order
     - `sort -f`: ignore case
