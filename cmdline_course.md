@@ -43,6 +43,30 @@ This course offers a comprehensive exploration of the command-line environment, 
 Reflection: 1-3 sentences
 
 ## Week 2
+- Handling directories
+  - `mkdir` creat a new directory
+  - `rmdir` delete empty directory
+  - `rm -R` remove directories with content
+  - 'cp -R' copy directories
+  - 'mv' move / rename directories
+- File system
+  - `/home` user home directories
+  - `/bin` for essential commands like `ls`
+  - `/tmp` for temporary files
+  - `which` or `where` return the path of executable files
+- Process management
+  - monitoring processes:
+    - `top`: displays real-time information about running processes, including their CPU and memory usage.
+  - foreground & background processes:
+    - `&`: at the end of a command, runs that command as a background process
+    - `fg`: brings a background process to the foreground
+    - `CTRL+Z`: suspends a foreground process and sends it to the background. paused but not terminated
+  - kill processes:
+    - `ps`: displays information about currently running processes, including their Process IDs (PIDs)
+    - `kill`: terminates a process by sending a signal, typically using the process’s PID
+- Remote server
+  - conneting to remote server: `ssh`
+    - `ssh <username>@<servername>`
 
 ## Week 3
 
