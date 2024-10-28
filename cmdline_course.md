@@ -16,7 +16,28 @@ This course offers a comprehensive exploration of the command-line environment, 
 | Week 7 | Version Control | |
 
 ## Week 1
-- key points 1
+- Setting up and launching command-line on Windows
+  download [Ubuntu](https://ubuntu.com/download)
+- Command line basics
+  | Command | Role |
+  | -------- | --------------------- |
+  | `ls` list files in a directory |
+  | `ls /mnt/c/Users/...` | list files in a specific Windows directory |
+  | `pwd` | show the current directory path |
+  | `whoami` | show username |
+  | `cp` | copy files |
+  | `mv` | move / rename files |
+  | `rm` | delete files |
+  | `mkdir` | creat a directory |
+  | `rmdir` | delete a directory |
+  | `cd` | change the working directory |
+  | `cat` | display file contents |
+  | `less` | view file page by page |
+  | `wget` | download files from websites |
+  
+  
+  
+
 ```makefile
 Makefile
 ```
