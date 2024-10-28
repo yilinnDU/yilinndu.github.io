@@ -20,9 +20,9 @@ This course offers a comprehensive exploration of the command-line environment, 
   download [Ubuntu](https://ubuntu.com/download)
 - Command line basics
   | Command | Role |
-  | -------- | --------------------- |
+  | ------ | --------------------- |
   | `ls` list files in a directory |
-  | `ls /mnt/c/Users/...` | list files in a specific Windows directory |
+  | `ls /mnt/c/Users/..` | list files in a specific Windows directory |
   | `pwd` | show the current directory path |
   | `whoami` | show username |
   | `cp` | copy files |
