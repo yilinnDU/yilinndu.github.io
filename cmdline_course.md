@@ -128,7 +128,8 @@ This course offers a comprehensive exploration of the command-line environment, 
   ```
   `egrep -w -f`: `-w` only match whole words, `-f` read a file<br>`egrep -w -f search.csv basic.csv` read the patterns from `search.csv`, and searches through the 'basic.csv' file for lines that match those patterns
 
-## Week 4
+## Week 4 Advanced Corpus Processing
+
 
 ## Week 5
 
