@@ -36,7 +36,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 - Quitting applications
   - Quit `less` using `q`
   - Quit `vim` using `Esc`
-  - Quit input (in `cat`) or log out of terminal using `Ctrl+D`
+  - Quit input (like `cat`) or log out of terminal using `Ctrl+D`
   - Quit text editors like `nano` using `Ctrl+X`
   - Quit almost everything using `Ctrl-C`
 
