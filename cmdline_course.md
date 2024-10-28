@@ -14,7 +14,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 | Week 5 | Scripting and Configuration Files | |
 | Week 6 | Installing and Running Programs | |
 | Week 7 | Version Control | |
-<br>
+
 ## Week 1 Introduction to Command Line Environments  
 
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
