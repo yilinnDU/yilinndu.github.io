@@ -16,8 +16,9 @@ This course offers a comprehensive exploration of the command-line environment, 
 | Week 7 | Version Control | |
 <br>
 ## Week 1 Introduction to Command Line Environments
-<br>
-<img src="assets/images/week1.png" alt="week1_img">
+
+
+<img src="assets/images/week1.png" alt="Photo">
 
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
 - **Command line basics**
