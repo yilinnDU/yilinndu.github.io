@@ -75,10 +75,10 @@ Reflection: 1-3 sentences
     - from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`
     - example:
       ```bash
-      ssh puhti.csc.fi
-      CTRL+D
-      scp KIK-LG219/week1/life_of_bee.txt puhti:~
-      scp puhti:~/life_of_bee.txt .
+      $ ssh puhti.csc.fi
+      $ CTRL+D
+      $ scp KIK-LG219/week1/life_of_bee.txt puhti:~
+      $ scp puhti:~/life_of_bee.txt .
       ```
 
 ## Week 3 Basic Corpus Processing
