@@ -34,19 +34,12 @@ This course offers a comprehensive exploration of the command-line environment, 
   | `cat` | display file contents |
   | `less` | view file page by page |
   | `wget` | download files from websites |
-  
-  
-  
-
-```makefile
-Makefile
-```
-
-```bash
-terminal
-```
-- key points 2<br>
-`code`
+- Quitting applications
+  - Quit `less` using `q`
+  - Quit `vim` using `Esc`
+  - Quit input (in `cat`) or log out of terminal using `Ctrl+D`
+  - Quit text editors like `nano` using `Ctrl+X`
+  - Quit almost everything using `Ctrl-C`
 
 - Reflection: 1-3 sentences
 
@@ -63,3 +56,13 @@ terminal
 ## Week 7
 
 <img src="assets/images/rei_picture.jpg" alt="Photo" hspace="20" width="30%" align="left"/>
+
+```makefile
+Makefile
+```
+
+```bash
+terminal
+```
+- key points 2<br>
+`code`
