@@ -139,6 +139,8 @@ This course offers a comprehensive exploration of the command-line environment, 
   ```
   `egrep -w -f`: `-w` only match whole words, `-f` read a file<br>`egrep -w -f search.csv basic.csv` read the patterns from `search.csv`, and searches through the 'basic.csv' file for lines that match those patterns
 
+*Reflection*:
+
 ## Week 4 Advanced Corpus Processing
 
 <img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
@@ -196,23 +198,18 @@ This course offers a comprehensive exploration of the command-line environment, 
     - `tr -s '[:space:]' '\n'` create a single-word-per-line output
     - `tail -n +2` `tail -n +3` remove the first/second line
     - `paste -d " " file.unigram file.unigram_plus_one file.uniram_plus_two > file.trigram` combines lines from the three files into a single file, aligning them by space (three words per line)
-    
 
-
-
-
-
-
-
-
-
-
-
-
+*Reflection*: hard to follow at the beginning, really need some time to understand the process and concepts
 
 ## Week 5
 
+<img src="assets/images/week5.png" alt="week5" hspace="10" width="50%">
+
 ## Week 6
 
+<img src="assets/images/week6.png" alt="week6" hspace="10" width="50%">
+
 ## Week 7
+
+<img src="assets/images/week7.png" alt="week7" hspace="10" width="50%">
 
