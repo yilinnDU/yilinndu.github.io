@@ -232,7 +232,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `printenv` to view all environment variables
   - `echo` to check the value of a variable, like `echo $HOME`
   - `export` to change or create variables, like `export KIK=$HOME/KIK-LG221`
-  - `export PATH=$PATH:~/KIK-LG219/week5`, change the $PATH variable to include new directories, <br>allowing the system to find scripts or programs without needing their full path
+  - `export PATH=$PATH:~/KIK-LG219/week5`, change the $PATH variable to include new directories, allowing the system to find scripts or programs without needing their full path
 
 *Reflection*:
 
