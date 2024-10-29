@@ -235,10 +235,10 @@ This course offers a comprehensive exploration of the command-line environment, 
 <img src="assets/images/week6.png" alt="week6" hspace="10" width="25%">
 
 - **Root user**
-  - `su`
-  - `sudo`
-- **Installtion**
-  
+  - `su` for become root user, password is needed<br>
+    `su username` switch to another user
+  - `sudo` for temporary root access
+- **Installation**
 
 - **Makefile**
   ```bash
@@ -267,3 +267,4 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 <img src="assets/images/week7.png" alt="week7" hspace="10" width="20%">
 
+- **Git and GitHub**
