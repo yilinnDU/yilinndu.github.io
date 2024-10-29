@@ -96,10 +96,12 @@ This course offers a comprehensive exploration of the command-line environment, 
 - **Basic text processing**
   - `tr`: `tr "a" "A"` translate characters in a text stream
     - `tr -d`: delete specified characters
+    - `tr -c`: keeps only characters *outside* the specified set
     - `tr -s`: squeeze multiple consecutive characters into one<br>`cat filename.txt | tr -s "[:space:][:punct:]" "\n" > new_filename.txt` tokenize the text into one word per line
   - `sort`: `sort new_filename.txt > sort_filename.txt` sort lines in alphabetical order
     - `sort -f`: ignore case
     - `sort -r`: in reverse order
+    - ·sort -nr·: sort numerically in reverse
   - `uniq`: remove duplicate lines
     - `uniq -i`: ignore case
     - `uniq -c`: count the number of occurrences of each line
@@ -113,11 +115,11 @@ This course offers a comprehensive exploration of the command-line environment, 
     - `tail -n +2 file.csv > tail_file.csv`: `-n +2`start printing from line 2
 - **`egrep` and regular expression**<br>
   `egrep` is used for searching text using regular expressions
-  - `egrep " had [a-z]*ed "`, `*`means the character can occur zero or more times
-  - `egrep "\bhad [a-z]*ed\b"`, `\b` is used to specify word boundaries
-  - `egrep "^[Aa][a-zåäö]*"`, `^`beginning of the line
-  - `egrep "[a-zA-ZåäöÅÄÖ]*ss[aä]$"`, `$` end of the line
-  - `egrep "^[a-zA-ZåäöÅÄÖ]{4}ss[aä]$" `, `{}`the preceding character class must occur exactly certain times
+  - `egrep " had [a-z]*ed "` `*`means the character can occur zero or more times
+  - `egrep "\bhad [a-z]*ed\b"` `\b` is used to specify word boundaries
+  - `egrep "^[Aa][a-zåäö]*"` `^`beginning of the line
+  - `egrep "[a-zA-ZåäöÅÄÖ]*ss[aä]$"` `$` end of the line
+  - `egrep "^[a-zA-ZåäöÅÄÖ]{4}ss[aä]$" ` `{}`the preceding character class must occur exactly certain times
   - `egrep --color "\b[a-zåäö]*ss[aä] [a-zåäö]*ss[aä]\b" file.txt > new_file.txt`, highlight and store matching lines in a new file
 - **Basic analysis of CSV files**
   ```bash
@@ -141,7 +143,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 <img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
 
-- **`sed` command**<br>
+- **the `sed` command**<br>
   find, replace, substitute ... text<br>
   `-E` for extended regular expressions<br>
   `-n` suppresses line-by-line print, if the output need to be stored in another file, do not use it
@@ -161,6 +163,40 @@ This course offers a comprehensive exploration of the command-line environment, 
     - `sed -nE 's/that ([a-z]+d)([ \.,:?!$])/that \1 not\2/gp' file.txt` `\N` to refer to the Nth captured group in `()`
     - `sed -E 's/([a-zA-Z]+) \1/\1/g' filename` remove duplicate words, `+` means one or more times (`*` means zero or more times)
 - **Pipelines**
+  - **word frequency list**
+    ```bash
+    cat file.txt | tr -s '\n\r\t ' '\n' | tr -dc "A-Za-z0-9\n'" | sort | uniq -c | sort -nr > file.freq
+    ```
+    - `tr -s '\n\r\t ' '\n'` replace all whitespace into newlines and compress extra ones into one
+    - `tr -dc "A-Za-z0-9\n-'"` removes characters not specified (anything besides letters, numbers, and a few special characters)<br>
+      `"A-Za-z0-9"`can be replaced by `[:alnum:]`(utf-8)
+  - **one sentence per line**
+    ```bash
+    cat file.txt | dos2unix | sed 's/^$/#/' | tr '\n' ' ' | sed -E 's/([.?!]) ([A-Z])/\1# \2/g' | sed -E 's/([IVX][.])#/\1/g' | tr '#' '\n' | sed 's/^ *//' | sed 's/ *$//' | grep -v '^$' > file.sent
+    ```
+    - `dos2unix' changes Windows line endings (\r) to Unix format (\n)
+    - `sed 's/^$/#/'` replaces empty lines with # to mark sentence boundaries
+    - `tr '\n' ' '` transforms all newlines into spaces, creating one long line of text
+    - `sed -E 's/([.?!]) ([A-Z])/\1# \2/g'` punctuation + space + capital letter mark the separation between sentences, also add # to mark sentence boundaries
+    - `sed -E 's/([IVX][.])#/\1/g'` removes # if it comes right after a Roman numeral (like IV.)
+    - `tr '#' '\n'` converts the # symbols back into newlines, effectively creating one sentence per line
+    - `sed 's/^ *//' | sed 's/ *$//'` remove leading and trailing spaces for each line
+    - `grep -v '^$''` deletes any empty lines from the output, `grep -v` displays all lines that do *not* match the specified pattern
+  - **N-grams**<br>
+    N-grams are contiguous sequences of **n** items from a given sample
+    ```bash
+    cat file.sent | sed -E 's/^/# /' | sed -E 's/$/ #/' | sed -E 's/([a-zA-Z]) ([;:,.?!])/\1 \2/g' | tr -s '[:space:]' '\n' > file.unigram
+    tail -n +2 > file.unigram_plus_one
+    tail -n +3 > file.unigram_plus_two
+    paste -d " " file.unigram file.unigram_plus_one file.unigram_plus_two > file.trigram
+    egrep "^the queen " file.trigram | sort | uniq -c | sort -nr
+    ```
+    - `sed -E 's/^/# /' | sed -E 's/$/ #/'` add # at the beginning and end of each line
+    - `sed -E 's/([a-zA-Z])([;:,.?!])/\1 \2/g'` insert a space between word and punctuation
+    - `tr -s '[:space:]' '\n'` create a single-word-per-line output
+    - `tail -n +2` `tail -n +3` remove the first/second line
+    - `paste -d " " file.unigram file.unigram_plus_one file.uniram_plus_two > file.trigram` combines lines from the three files into a single file, aligning them by space (three words per line)
+    
 
 
 
