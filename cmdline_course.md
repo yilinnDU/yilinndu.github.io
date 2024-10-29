@@ -11,7 +11,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 | Week 2 | Navigating a UNIX System |  |
 | Week 3 | Basic Corpus Processing |  |
 | Week 4 | Advanced Corpus Processing | |
-| Week 5 | Scripting and Configuration Files | |
+| Week 5 | Scripting and Configuration Files | script, environment variables |
 | Week 6 | Installing and Running Programs | |
 | Week 7 | Version Control | |
 
@@ -205,7 +205,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 <img src="assets/images/week5.png" alt="week5" hspace="10" width="30%">
 
-- **Scripts**
+- **Scripts**<br>
   A shell script is a file with a series of commands that can be run together, usually has a `.sh` extension
   ```bash
   #! /bin/bash
@@ -227,11 +227,41 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `$#` tells how many command-line arguments were passed to the script, `-ne 2`: if not equal to 2
   - `chmod u+x script.sh` add execute permissions to the script
   - `./script.sh file1 file2` run the script
-  
+
+*Reflection*:
 
 ## Week 6
 
 <img src="assets/images/week6.png" alt="week6" hspace="10" width="25%">
+
+- **Root user**
+  - `su`
+  - `sudo`
+- **Installtion**
+  
+
+- **Makefile**
+  ```bash
+  BOOKS=A, B, C, D, E, F, G
+
+  FREQLISTS=$(BOOKS:%=result/%.freq.txt)
+  SENTEDBOOKS=$(BOOKS:%=results/%.sent.txt)
+
+  all: $(FREQLISTS) $(SENTEDBOOKS)
+
+  clean:
+          rm -f results/* data/*no_md.txt
+				
+  %.no_md.txt: %.txt
+          python3 src/remove_gutenberg_metadata.py $< $@
+
+  results/%.freq.txt: data/%.no_md.txt
+          src/freqlist.sh $< $@
+
+  results/%.sent.txt: data/%.no_md.txt
+          src/sent_per_line.sh $< $@
+  ```
+  `make all` or `make clean`
 
 ## Week 7
 
