@@ -203,13 +203,13 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 5
 
-<img src="assets/images/week5.png" alt="week5" hspace="10" width="50%">
+<img src="assets/images/week5.png" alt="week5" hspace="10" width="30%">
 
 ## Week 6
 
-<img src="assets/images/week6.png" alt="week6" hspace="10" width="50%">
+<img src="assets/images/week6.png" alt="week6" hspace="10" width="30%">
 
 ## Week 7
 
-<img src="assets/images/week7.png" alt="week7" hspace="10" width="50%">
+<img src="assets/images/week7.png" alt="week7" hspace="10" width="30%">
 
