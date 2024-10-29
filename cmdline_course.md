@@ -227,6 +227,12 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `$#` tells how many command-line arguments were passed to the script, `-ne 2`: if not equal to 2
   - `chmod u+x script.sh` add execute permissions to the script
   - `./script.sh file1 file2` run the script
+- **Environment variables**<br>
+  An environment is a set of environment variables that hold system settings and information accessible to all processes.<br>
+  - `printenv` to view all environment variables
+  - `echo` to check the value of a variable, like `echo $HOME`
+  - `export` to change or create variables, like `export KIK=$HOME/KIK-LG221`
+  - `export PATH=$PATH:~/KIK-LG219/week5`, change the $PATH variable to include new directories, <br>allowing the system to find scripts or programs without needing their full path
 
 *Reflection*:
 
