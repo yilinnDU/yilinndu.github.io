@@ -141,8 +141,37 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 <img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
 
-- **`sed` command**
+- **`sed` command**<br>
+  find, replace, substitute ... text<br>
+  `-E` for extended regular expressions<br>
+  `-n` suppresses line-by-line print, if the output need to be stored in another file, do not use it
+  - Basic commands:
+    - Delete: `sed '/text/d' file.txt` 
+    - Print: `sed -nE '/word/p' file.txt` print lines
+    - Substitute: `sed -nE 's/before/after/g' file.txt`
+    - `gp`can be combined: `sed -nE 's/before/after/gp' file.txt > newfile.txt`
+  - Regular expressions:
+    - `sed '/^$/d' delete empty lines
+    - `sed -nE '/^start/p' file.txt` finds lines starting with "start"
+    - `sed -nE '/end$/p' file.txt` lines ending with "end"
+    - `sed -nE '/\bword\b/p' file.txt` find whole words "word"
+    - `sed -nE '/abc[d]\{1,3\}/p' file.txt` "abc" followed by 1-3 "d"s
+  - Advanced regular expressions:
+    - `sed -nE '/that [a-z]+d[ \.,?!:$]/p' file.txt` find "that ...d" and followed by and a space or punctuation, `\` to escape special characters (`.`)
+    - `sed -nE 's/that ([a-z]+d)([ \.,:?!$])/that \1 not\2/gp' file.txt` `\N` to refer to the Nth captured group in `()`
+    - `sed -E 's/([a-zA-Z]+) \1/\1/g' filename` remove duplicate words, `+` means one or more times (`*` means zero or more times)
 - **Pipelines**
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Week 5
