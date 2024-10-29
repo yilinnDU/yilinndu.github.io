@@ -205,11 +205,35 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 <img src="assets/images/week5.png" alt="week5" hspace="10" width="30%">
 
+- **Scripts**
+  A shell script is a file with a series of commands that can be run together, usually has a `.sh` extension
+  ```bash
+  #! /bin/bash
+  if [ $# -ne 2 ] 
+  then
+	  echo "ERROR: Two command line qrguments required!"
+	  echo "./freqlist.sh input_text_file output_text_file" 
+	  exit 1
+  fi
+
+  cat $1 | 
+  dos2unix |
+  tr -s "[:spacce:]" "\n" | 
+  tr -d "[:punct:]"
+  sort |
+  uniq -c |
+  sort -nr > $2
+  ```
+  - `$#` tells how many command-line arguments were passed to the script, `-ne 2`: if not equal to 2
+  - `chmod u+x script.sh` add execute permissions to the script
+  - `./script.sh file1 file2` run the script
+  
+
 ## Week 6
 
-<img src="assets/images/week6.png" alt="week6" hspace="10" width="30%">
+<img src="assets/images/week6.png" alt="week6" hspace="10" width="25%">
 
 ## Week 7
 
-<img src="assets/images/week7.png" alt="week7" hspace="10" width="30%">
+<img src="assets/images/week7.png" alt="week7" hspace="10" width="20%">
 
