@@ -17,7 +17,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 1 Introduction to Command Line Environments  
 
-<img src="assets/images/week1.png" alt="week1" hspace="10" width="60%">
+<img src="assets/images/week1.png" alt="week1" hspace="10" width="70%">
 
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
 - **Command line basics**
@@ -48,7 +48,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 2 Navigating a UNIX System
 
-<img src="assets/images/week2.png" alt="week2" hspace="10" width="50%">
+<img src="assets/images/week2.png" alt="week2" hspace="10" width="70%">
 
 - **Handling directories**
   - `mkdir` creat a new directory
@@ -92,7 +92,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 3 Basic Corpus Processing
 
-<img src="assets/images/week3.png" alt="week3" hspace="10" width="40%">
+<img src="assets/images/week3.png" alt="week3" hspace="10" width="60%">
 
 - **Basic text processing**
   - `tr`: `tr "a" "A"` translate characters in a text stream
@@ -144,7 +144,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 4 Advanced Corpus Processing
 
-<img src="assets/images/week4.png" alt="week4" hspace="10" width="30%">
+<img src="assets/images/week4.png" alt="week4" hspace="10" width="60%">
 
 - **the `sed` command**<br>
   find, replace, substitute ... text<br>
@@ -204,7 +204,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 5 Scripting and Configuration Files
 
-<img src="assets/images/week5.png" alt="week5" hspace="10" width="30%">
+<img src="assets/images/week5.png" alt="week5" hspace="10" width="60%">
 
 - **Scripts**<br>
   A shell script is a file with a series of commands that can be run together, usually has a `.sh` extension
@@ -239,7 +239,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 6 Installing and Running Programs
 
-<img src="assets/images/week6.png" alt="week6" hspace="10" width="25%">
+<img src="assets/images/week6.png" alt="week6" hspace="10" width="50%">
 
 - **Root user**
   - `su` for become root user, password is needed<br>
@@ -310,7 +310,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 ## Week 7 Version Control
 
-<img src="assets/images/week7.png" alt="week7" hspace="10" width="20%">
+<img src="assets/images/week7.png" alt="week7" hspace="10" width="40%">
 
 - **Git and GitHub**
   - clone a repository: `git clone https://github.com/username/project.git`
