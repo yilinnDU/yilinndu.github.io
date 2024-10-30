@@ -245,7 +245,18 @@ This course offers a comprehensive exploration of the command-line environment, 
     `su username` switch to another user
   - `sudo` for temporary root access
 - **Installation**
-
+  - Install software: `sudo apt-get install python3`
+  - Manage Python packages: `sudo apt-get install python3-pip`, and then use pip to install packages`pip install package_name`
+    ```bash
+    $ sudo apt-get install python-pip
+    $ pip install nltk
+    $ python
+    >>> import nltk
+    >>> text = "At eight o'clock on Thursday morning Arthur didn't feel very good."
+    >>> from nltk.tokenize import word_tokenize
+    >>> tokenized =word_tokenize(text)
+    >>> print(tokenized)
+    ```
 - **Makefile**
   ```bash
   BOOKS=A, B, C, D, E, F, G
