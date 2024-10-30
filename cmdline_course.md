@@ -44,6 +44,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - Quit almost everything using `Ctrl+C`
 
 *Reflection：This week I learned how to navigate and use the command line interface on Windows using Ubuntu. The basic commands provided a solid foundation for managing files and directories.* 
+
 <br>
 ## Week 2 Navigating a UNIX System
 
@@ -88,6 +89,7 @@ This course offers a comprehensive exploration of the command-line environment, 
     from remote to local: `scp <username>@<remote_server>:<remote_path> <local_path>`
 
 *Reflection: In this week's session, I explored directory handling and file management, which are crucial for effective navigation in a UNIX environment. The process management tools, such as `top` and `kill`, helped me understand how to monitor and control running processes. Connecting to remote servers with `ssh` and transferring files using scp broadened my ability to manage files across systems* 
+
 <br>
 ## Week 3 Basic Corpus Processing
 
@@ -140,6 +142,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   `egrep -w -f`: `-w` only match whole words, `-f` read a file<br>`egrep -w -f search.csv basic.csv` read the patterns from `search.csv`, and searches through the 'basic.csv' file for lines that match those patterns
 
 *Reflection: This week focused on text processing, allowing me to manipulate and analyze textual data efficiently. Commands like `tr`, `sort`, and `uniq` provided practical tools for basic text analysis. The introduction to regular expressions with egrep opened up new possibilities for searching and filtering text, enhancing my data processing skills.*
+
 <br>
 ## Week 4 Advanced Corpus Processing
 
@@ -200,6 +203,7 @@ This course offers a comprehensive exploration of the command-line environment, 
     - `paste -d " " file.unigram file.unigram_plus_one file.uniram_plus_two > file.trigram` combines lines from the three files into a single file, aligning them by space (three words per line)
 
 *Reflection: Advanced text processing techniques were quite challenging at first. However, mastering pipelines to create word frequency lists and manage sentence structures was rewarding.*
+
 <br>
 ## Week 5 Scripting and Configuration Files
 
@@ -235,6 +239,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `export PATH=$PATH:~/KIK-LG219/week5`, change the $PATH variable to include new directories, allowing the system to find scripts or programs without needing their full path
 
 *Reflection: In this week's exploration of scripting and configuration files, I realized how shell scripts can significantly streamline my workflow. Understanding environment variables helps me better manage and configure my development environment.*
+
 <br>
 ## Week 6 Installing and Running Programs
 
@@ -306,6 +311,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `all: $(FREQLISTS) $(SENTEDBOOKS)`: defines a target named `all`, for `make all` to run
 
 *Reflection: Learning about installing and running programs deepened my familiarity with using Python, especially the importance of creating virtual environments. This week focused on Makefiles, which presented significant challenges for me. I struggled to grasp the syntax used in Makefiles at the beginning. Gradually, I began to see how powerful Makefiles can be for managing project workflows.*
+
 <br>
 ## Week 7 Version Control
 
