@@ -21,6 +21,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 - Setting up and launching command-line on Windows using [Ubuntu](https://ubuntu.com/download)
 - **Command line basics**
+  
   | Command | Role |
   | ------ | --------------------- |
   | `ls` | list files in a directory |
