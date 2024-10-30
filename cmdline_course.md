@@ -7,13 +7,13 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 | Week    | Overview        | Key Points         |
 | ------- | --------------------- | ------------------- |
-| Week 1 | Introduction to Command Line Environments |  |
-| Week 2 | Navigating a UNIX System |  |
-| Week 3 | Basic Corpus Processing |  |
-| Week 4 | Advanced Corpus Processing | |
+| Week 1 | Introduction to Command Line Environments | basic commands |
+| Week 2 | Navigating a UNIX System | file system, process, remote server |
+| Week 3 | Basic Corpus Processing | grep command, regular expressions |
+| Week 4 | Advanced Corpus Processing | sed command, pipelines |
 | Week 5 | Scripting and Configuration Files | script, environment variables |
-| Week 6 | Installing and Running Programs | |
-| Week 7 | Version Control | |
+| Week 6 | Installing and Running Programs | root user, installation, Makefile |
+| Week 7 | Version Control | Git operations, GitHub |
 
 ## Week 1 Introduction to Command Line Environments  
 
@@ -201,7 +201,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 *Reflection*: hard to follow at the beginning, really need some time to understand the process and concepts
 
-## Week 5
+## Week 5 Scripting and Configuration Files
 
 <img src="assets/images/week5.png" alt="week5" hspace="10" width="30%">
 
@@ -236,7 +236,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 *Reflection*:
 
-## Week 6
+## Week 6 Installing and Running Programs
 
 <img src="assets/images/week6.png" alt="week6" hspace="10" width="25%">
 
@@ -307,7 +307,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 *Reflection*:
 
-## Week 7
+## Week 7 Version Control
 
 <img src="assets/images/week7.png" alt="week7" hspace="10" width="20%">
 
