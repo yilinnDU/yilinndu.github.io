@@ -167,14 +167,14 @@ This course offers a comprehensive exploration of the command-line environment, 
 - **Pipelines**
   - **word frequency list**
     ```bash
-    cat file.txt | tr -s '\n\r\t ' '\n' | tr -dc "A-Za-z0-9\n'" | sort | uniq -c | sort -nr > file.freq
+    $ cat file.txt | tr -s '\n\r\t ' '\n' | tr -dc "A-Za-z0-9\n'" | sort | uniq -c | sort -nr > file.freq
     ```
     - `tr -s '\n\r\t ' '\n'` replace all whitespace into newlines and compress extra ones into one
     - `tr -dc "A-Za-z0-9\n-'"` removes characters not specified (anything besides letters, numbers, and a few special characters)<br>
       `"A-Za-z0-9"`can be replaced by `[:alnum:]`(utf-8)
   - **one sentence per line**
     ```bash
-    cat file.txt | dos2unix | sed 's/^$/#/' | tr '\n' ' ' | sed -E 's/([.?!]) ([A-Z])/\1# \2/g' | sed -E 's/([IVX][.])#/\1/g' | tr '#' '\n' | sed 's/^ *//' | sed 's/ *$//' | grep -v '^$' > file.sent
+    $ cat file.txt | dos2unix | sed 's/^$/#/' | tr '\n' ' ' | sed -E 's/([.?!]) ([A-Z])/\1# \2/g' | sed -E 's/([IVX][.])#/\1/g' | tr '#' '\n' | sed 's/^ *//' | sed 's/ *$//' | grep -v '^$' > file.sent
     ```
     - `dos2unix' changes Windows line endings (\r) to Unix format (\n)
     - `sed 's/^$/#/'` replaces empty lines with # to mark sentence boundaries
@@ -187,11 +187,11 @@ This course offers a comprehensive exploration of the command-line environment, 
   - **N-grams**<br>
     N-grams are contiguous sequences of **n** items from a given sample
     ```bash
-    cat file.sent | sed -E 's/^/# /' | sed -E 's/$/ #/' | sed -E 's/([a-zA-Z]) ([;:,.?!])/\1 \2/g' | tr -s '[:space:]' '\n' > file.unigram
-    tail -n +2 > file.unigram_plus_one
-    tail -n +3 > file.unigram_plus_two
-    paste -d " " file.unigram file.unigram_plus_one file.unigram_plus_two > file.trigram
-    egrep "^the queen " file.trigram | sort | uniq -c | sort -nr
+    $ cat file.sent | sed -E 's/^/# /' | sed -E 's/$/ #/' | sed -E 's/([a-zA-Z]) ([;:,.?!])/\1 \2/g' | tr -s '[:space:]' '\n' > file.unigram
+    $ tail -n +2 > file.unigram_plus_one
+    $ tail -n +3 > file.unigram_plus_two
+    $ paste -d " " file.unigram file.unigram_plus_one file.unigram_plus_two > file.trigram
+    $ egrep "^the queen " file.trigram | sort | uniq -c | sort -nr
     ```
     - `sed -E 's/^/# /' | sed -E 's/$/ #/'` add # at the beginning and end of each line
     - `sed -E 's/([a-zA-Z])([;:,.?!])/\1 \2/g'` insert a space between word and punctuation
@@ -244,7 +244,7 @@ This course offers a comprehensive exploration of the command-line environment, 
   - `su` for become root user, password is needed<br>
     `su username` switch to another user
   - `sudo` for temporary root access
-- **Installation**
+- **Python installation**
   - Install software: `sudo apt-get install python3`
   - Manage Python packages: `sudo apt-get install python3-pip`, and then use pip to install packages`pip install package_name`
     ```bash
@@ -257,8 +257,30 @@ This course offers a comprehensive exploration of the command-line environment, 
     >>> tokenized =word_tokenize(text)
     >>> print(tokenized)
     ```
+  - **Python virtual environment**<br>
+    Having multiple Python versions and library versions on the same system can cause conflicts. Solution: Virtual Environments, creating a semi-isolated environment for each project.
+    - create: `python3 -m venv KIK-LG219/week6/sample-venv`
+    - activate: `source KIK-LG219/week6/sample-venv/bin/activate`
+    - exit: `[sample-venv] $ deactivate`
 - **Makefile**
-  ```bash
+  - target file: `data/life_of_bee.no_md.txt`
+    ```makefile
+    data/life_of_bee.no_md.txt: data/life_of_bee.txt
+        python3 src/remove_gutenberg_metadata.py data/life_of_bee.txt data/life_of_bee.no_md.txt
+    ```
+  - `$<` for the first dependency, `$@` for target：
+    ```makefile
+    data/life_of_bee.no_md.txt: data/life_of_bee.txt
+        python3 src/remove_gutenberg_metadata.py $< $@
+    ```
+  - use `%` as a placeholder to match filenames
+    ```makefile
+    %.no_md.txt: %.txt
+        python3 src/remove_gutenberg_metadata.py $< $@
+    ```
+  - run the rule: `make data/life_of_bee.no_md.txt`
+- **Makefile for multiple targets**
+  ```makefile
   BOOKS=A, B, C, D, E, F, G
 
   FREQLISTS=$(BOOKS:%=result/%.freq.txt)
@@ -278,10 +300,26 @@ This course offers a comprehensive exploration of the command-line environment, 
   results/%.sent.txt: data/%.no_md.txt
           src/sent_per_line.sh $< $@
   ```
-  `make all` or `make clean`
+  `make all` / `make clean`
+  - variables like `BOOKS` and `FREQLISTS` can store lists of files
+  - `FREQLISTS=$(BOOKS:%=result/%.freq.txt)`: for each book in `BOOKS`, create a correspinding filename in `results` directory with a `.freq.txt` extension
+  - `all: $(FREQLISTS) $(SENTEDBOOKS)`: defines a target named `all`, for `make all` to run
+
+*Reflection*:
 
 ## Week 7
 
 <img src="assets/images/week7.png" alt="week7" hspace="10" width="20%">
 
 - **Git and GitHub**
+  - clone a repository: `git clone https://github.com/username/project.git`
+  - check status: `git status`
+  - add changes: `git add filename.txt` `git add .`
+  - commit changes: `git commit -m "some description"`
+  - push changes to GitHub: `git push origin main` `main`or other branches
+  - pull changes from GitHub: `git pull origin main`
+  - create a new branch: `git checkout -b new-branch`
+  - merge a branch: `git checkout main` `git merge new-branch`
+  - delete a branch: `git branch -d new-branch`
+
+*Reflection*:
