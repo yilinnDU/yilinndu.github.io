@@ -7,7 +7,7 @@ This course offers a comprehensive exploration of the command-line environment, 
 
 | Week    | Overview        | Key Points         |
 | ------- | --------------------- | ------------------- |
-| Week 1 | Introduction to Command Line Environments | basic commands |
+| Week 1 | Introduction to the Environments | basic commands |
 | Week 2 | Navigating a UNIX System | file system, process, remote server |
 | Week 3 | Basic Corpus Processing | grep command, regular expressions |
 | Week 4 | Advanced Corpus Processing | sed command, pipelines |
